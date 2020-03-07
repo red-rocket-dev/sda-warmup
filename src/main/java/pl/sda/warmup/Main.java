@@ -49,7 +49,7 @@ public class Main {
                 if (x == 0 || y == 0 || x == w - 1 || y == h - 1) {
                     System.out.print("*");
                 } else {
-                    if (x % 2 == 0 && y % 2 == 0) {
+                    if (y % 2 == 0) {
                         System.out.print(" ");
                     } else if (x % 2 != 0 && y % 2 != 0) {
                         System.out.print(" ");
