@@ -36,20 +36,26 @@ public class Main {
 
          */
 
-        int h = 6;
-        int w = 5;
+        int h = 10;
+        int w = 10;
         printRect(w, h);
         System.out.println("-----------------");
-        printEmptyRect(w, h);
+        printChessRect(w, h);
     }
 
-    private static void printEmptyRect(int w, int h) {
+    private static void printChessRect(int w, int h) {
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
-                if(x == 0 || y == 0 || x == w - 1 || y == h -1) {
+                if (x == 0 || y == 0 || x == w - 1 || y == h - 1) {
                     System.out.print("*");
                 } else {
-                    System.out.print(" ");
+                    if (x % 2 == 0 && y % 2 == 0) {
+                        System.out.print(" ");
+                    } else if (x % 2 != 0 && y % 2 != 0) {
+                        System.out.print(" ");
+                    } else {
+                        System.out.print("*");
+                    }
                 }
             }
             System.out.println();
