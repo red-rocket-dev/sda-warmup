@@ -18,6 +18,9 @@ public class Main {
         public static void printEmptyRect(int w, int h)
         5. Czy można uprościć w myśl DRY (don't repeat yourself)
         Prostokąt o wymiarach 5 na 6 powinien wyglądać tak:
+        
+        
+        
 
          *****
          *****
