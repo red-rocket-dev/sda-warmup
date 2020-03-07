@@ -35,5 +35,33 @@ public class Main {
          *****
 
          */
+
+        int h = 6;
+        int w = 5;
+        printRect(w, h);
+        System.out.println("-----------------");
+        printEmptyRect(w, h);
+    }
+
+    private static void printEmptyRect(int w, int h) {
+        for (int y = 0; y < h; y++) {
+            for (int x = 0; x < w; x++) {
+                if(x == 0 || y == 0 || x == w - 1 || y == h -1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    private static void printRect(int w, int h) {
+        for (int y = 0; y < h; y++) {
+            for (int x = 0; x < w; x++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
